@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10C152E23B7E64500D27FA2 /* Digits.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A10C152D23B7E64500D27FA2 /* Digits.mlmodel */; };
+		A10C153023B7EBA600D27FA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C152F23B7EBA600D27FA2 /* SceneDelegate.swift */; };
 		A14C744523B28268004060EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C744423B28268004060EC /* AppDelegate.swift */; };
-		A14C744723B28268004060EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C744623B28268004060EC /* SceneDelegate.swift */; };
 		A14C744923B28268004060EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C744823B28268004060EC /* ViewController.swift */; };
 		A14C744C23B28268004060EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14C744A23B28268004060EC /* Main.storyboard */; };
 		A14C744E23B2826B004060EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14C744D23B2826B004060EC /* Assets.xcassets */; };
 		A14C745123B2826B004060EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14C744F23B2826B004060EC /* LaunchScreen.storyboard */; };
 		A14C745923B285B9004060EC /* DrawingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C745823B285B9004060EC /* DrawingImageView.swift */; };
 		A14C748223B663BF004060EC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14C748123B663BF004060EC /* Question.swift */; };
-		A14C748423B66745004060EC /* Digits.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A14C748323B66745004060EC /* Digits.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10C152D23B7E64500D27FA2 /* Digits.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Digits.mlmodel; sourceTree = "<group>"; };
+		A10C152F23B7EBA600D27FA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A14C744123B28268004060EC /* Brain Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brain Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14C744423B28268004060EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A14C744623B28268004060EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A14C744823B28268004060EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A14C744B23B28268004060EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A14C744D23B2826B004060EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		A14C745223B2826B004060EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14C745823B285B9004060EC /* DrawingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingImageView.swift; sourceTree = "<group>"; };
 		A14C748123B663BF004060EC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		A14C748323B66745004060EC /* Digits.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Digits.mlmodel; path = ../../mnist/Digits.mlproj/Models/Digits.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A10C153123B7ED9900D27FA2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A14C744423B28268004060EC /* AppDelegate.swift */,
+				A10C152F23B7EBA600D27FA2 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A10C153223B7EDB100D27FA2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A14C744823B28268004060EC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A10C153323B7EDC900D27FA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A14C744A23B28268004060EC /* Main.storyboard */,
+				A14C744F23B2826B004060EC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A10C153423B7EDE200D27FA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10C152D23B7E64500D27FA2 /* Digits.mlmodel */,
+				A14C748123B663BF004060EC /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10C153523B7EE0400D27FA2 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A14C745823B285B9004060EC /* DrawingImageView.swift */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
 		A14C743823B28268004060EC = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +105,13 @@
 		A14C744323B28268004060EC /* Brain Training */ = {
 			isa = PBXGroup;
 			children = (
-				A14C744423B28268004060EC /* AppDelegate.swift */,
-				A14C744623B28268004060EC /* SceneDelegate.swift */,
-				A14C744823B28268004060EC /* ViewController.swift */,
-				A14C744A23B28268004060EC /* Main.storyboard */,
-				A14C745823B285B9004060EC /* DrawingImageView.swift */,
+				A10C153423B7EDE200D27FA2 /* Models */,
+				A10C153123B7ED9900D27FA2 /* Delegates */,
+				A10C153223B7EDB100D27FA2 /* Controllers */,
+				A10C153323B7EDC900D27FA2 /* Views */,
+				A10C153523B7EE0400D27FA2 /* Custom Classes */,
 				A14C744D23B2826B004060EC /* Assets.xcassets */,
-				A14C744F23B2826B004060EC /* LaunchScreen.storyboard */,
 				A14C745223B2826B004060EC /* Info.plist */,
-				A14C748123B663BF004060EC /* Question.swift */,
-				A14C748323B66745004060EC /* Digits.mlmodel */,
 			);
 			path = "Brain Training";
 			sourceTree = "<group>";
@@ -148,11 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14C748223B663BF004060EC /* Question.swift in Sources */,
-				A14C748423B66745004060EC /* Digits.mlmodel in Sources */,
+				A10C152E23B7E64500D27FA2 /* Digits.mlmodel in Sources */,
 				A14C744923B28268004060EC /* ViewController.swift in Sources */,
 				A14C744523B28268004060EC /* AppDelegate.swift in Sources */,
-				A14C744723B28268004060EC /* SceneDelegate.swift in Sources */,
 				A14C745923B285B9004060EC /* DrawingImageView.swift in Sources */,
+				A10C153023B7EBA600D27FA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
